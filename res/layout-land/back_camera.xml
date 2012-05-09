@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:orientation="horizontal" 
+	android:background="@drawable/item_background_land" >
+	
+    <RelativeLayout   
+	    android:id="@id/layout_back_camera"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="4"
+	    android:layout_marginLeft="40dip" >
+		 
+	    <SurfaceView
+	        android:id="@id/preview_back_camera"
+	        android:layout_width="240dip"
+	        android:layout_height="180dip" 
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+ 		/> 
+	   
+    </RelativeLayout>
+
+    <ScrollView
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="30dip" 
+          android:layout_marginBottom="30dip"
+          android:layout_marginRight="30dip"
+          android:layout_marginLeft="60dip">
+             
+          <LinearLayout
+	           android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical" >
+		       
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="预览格式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_preview_format"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持预览格式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_preview_formats"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="预览尺寸:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_preview_size"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持预览尺寸:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_preview_sizes"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="预览帧速率:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_preview_framerate"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持预览帧速率:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_preview_framerates"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	   	      <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="Jpeg质量:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_jpeg_quality"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	   	       <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="Jpeg缩略图质量:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_jpeg_thumbnail_quality"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	   	       <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="Jpeg缩略图尺寸:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_jpeg_thumbnail_size"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+
+	   	       <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持缩略图尺寸:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_jpeg_thumbnail_sizes"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	  <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="图片格式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_picture_format"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持图片格式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_picture_formats"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="图片尺寸:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_picture_size"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持图片尺寸:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_picture_sizes"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	  <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="焦距:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_focal_length"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="缩放级别:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_zoom"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="最大变焦:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_maxzoom"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="对焦模式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_focus_mode"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	  <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持对焦模式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_focus_mode"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	  <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="曝光补偿:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_exposure_compensation"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="曝光补偿级别:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_exposure_compensation_step"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="最大曝光补偿值:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_max_exposure_compensation"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	  <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="最小曝光补偿值:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_min_exposure_compensation"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="水平视角:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_horizontal_view_angle"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="垂直视角:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_vertical_view_angle"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="闪光灯模式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_flash_mode"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持闪光灯模式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_flash_modes"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="白平衡:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_white_balance"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持白平衡:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_white_balance"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="色彩表现:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_color_effect"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持色彩表现:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_color_effect"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="边缘锐化:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_antibanding"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持边缘锐化:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_antibanding"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="场景模式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_scene_mode"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+	    	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="4"
+			           android:gravity="left"
+			           android:text="支持场景模式:"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/back_camera_supported_scene_modes"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="3"
+			            android:gravity="left"
+			            android:layout_marginLeft="10dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout> 	    	   
+	     </LinearLayout>
+    </ScrollView>
+ </LinearLayout> 

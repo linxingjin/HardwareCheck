@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip"
+        android:layout_marginBottom="6.0dip"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <android.opengl.GLSurfaceView
+                android:id="@id/gravity_opengl"
+                android:layout_width="180.0dip"
+                android:layout_height="178.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12.0dip"
+			android:layout_marginLeft="60dip"
+            android:layout_marginRight="60dip"
+            android:layout_marginTop="30dip"
+            android:orientation="vertical" >
+
+           <ScrollView
+                android:id="@id/main_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="48.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="6.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_x"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_x"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_y"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_y"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_z"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_z"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_name"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_company"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_company"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_sample_rate"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_sample_rate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_version"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_version"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_power"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_power"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_max_range"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_max_range"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gravity_resolution"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gravity_resolution"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9"  />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView> 
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

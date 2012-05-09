@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/item_background" >
+    
+     <LinearLayout 
+        android:id="@id/background_white"
+        android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" 
+   	    android:background="#FFFFFF" >   
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@id/background_red"
+        android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" 
+   	    android:background="#FF0000"
+   	    android:visibility="gone" >   
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@id/background_green"
+        android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" 
+   	    android:background="#00FF00"
+   	    android:visibility="gone" >"
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@id/background_blue"
+        android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" 
+   	    android:background="#0000FF" 
+   	    android:visibility="gone" >  
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@id/background_black"
+        android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" 
+   	    android:background="#000000"
+   	    android:visibility="gone" > 
+    </LinearLayout>
+</LinearLayout>

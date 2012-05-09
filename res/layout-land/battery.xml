@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/item_background_land" >
+	
+    <FrameLayout 
+        android:id="@id/framelayout_battery"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="4"
+	    android:layout_marginLeft="40dip"
+	    >
+	    <ImageView 
+	        android:id="@id/image_battery"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:src="@drawable/battery"    
+	    />
+	    <TextView 
+	        android:id="@id/text_battery_level_on_image"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="30dip"
+	    />
+	</FrameLayout>
+	
+           
+          <LinearLayout
+	          android:layout_width="fill_parent"
+	  		  android:layout_height="fill_parent"
+	  		  android:layout_weight="1"
+	  		  android:gravity="center" >
+	  		  
+	          <LinearLayout
+		           android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="vertical" >
+			       
+			   	   <LinearLayout
+				       android:layout_width="fill_parent"
+				       android:layout_height="wrap_content"
+				       android:orientation="horizontal" >
+			
+				       <TextView
+				           android:layout_width="fill_parent"
+				           android:layout_height="wrap_content"
+				           android:layout_weight="1"
+				           android:gravity="right"
+				           android:layout_marginRight="20dip"
+				           android:text="电池状态: "
+				           android:textColor="#ffffff" 
+				        />
+				
+				        <TextView
+				            android:id="@id/text_battery_state"  
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:layout_weight="1"
+				            android:gravity="left"
+				            android:layout_marginLeft="20dip"
+				            android:textColor="#3dbef9" 
+						/>     
+		    	 </LinearLayout>
+		    	 
+		   	     <LinearLayout
+			         android:layout_width="fill_parent"
+			         android:layout_height="wrap_content"
+			         android:orientation="horizontal" >
+	
+			         <TextView
+			             android:layout_width="fill_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_weight="1"
+			             android:gravity="right"
+			             android:layout_marginRight="20dip"
+			             android:text="电池情况: "
+			             android:textColor="#ffffff" 
+			         />
+			
+			        <TextView
+			             android:id="@id/text_battery_health"  
+			             android:layout_width="fill_parent"
+			             android:layout_height="wrap_content"
+			             android:layout_weight="1"
+			             android:gravity="left"
+			             android:layout_marginLeft="20dip"
+			             android:textColor="#3dbef9" 
+					/>     
+	    	 	</LinearLayout>
+	    	 	
+		   	    <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="right"
+			            android:layout_marginRight="20dip"
+			            android:text="电池接入: "
+			            android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_battery_plugged"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+		    	 </LinearLayout>
+		    	 
+		   	    <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="right"
+			            android:layout_marginRight="20dip"
+			            android:text="最大容量: "
+			            android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_battery_scale"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+		    	 </LinearLayout>
+		    	 
+		   	    <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="right"
+			            android:layout_marginRight="20dip"
+			            android:text="当前电量: "
+			            android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_battery_level"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+		    	 </LinearLayout>
+		    	 
+		   	    <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="right"
+			            android:layout_marginRight="20dip"
+			            android:text="当前电压: "
+			            android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_battery_voltage"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+		    	 </LinearLayout>
+		    	 
+		   	     <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="right"
+			            android:layout_marginRight="20dip"
+			            android:text="当前温度: "
+			            android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_battery_temperature"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+		    	 </LinearLayout>
+		    	 
+		   	     
+		   	     <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="right"
+			            android:layout_marginRight="20dip"
+			            android:text="电池类型: "
+			            android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_battery_style"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+		    	 </LinearLayout>
+		     </LinearLayout>
+		</LinearLayout>
+</LinearLayout>

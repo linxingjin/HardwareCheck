@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/item_background" >
+   
+    
+		  <Button 
+	         android:id="@id/btn_flashlight"
+	         android:layout_height="wrap_content" 
+	       	 android:layout_width="wrap_content"  
+	       	  android:layout_marginTop="60dip"
+	       	 android:layout_gravity="center" 
+	         android:layout_centerHorizontal="true"
+	         android:background="@drawable/flash_off"         
+	      />	
+	      <TextView
+	         android:id="@id/text_flashlight_hint"
+	         android:layout_below="@id/btn_flashlight"
+	         android:layout_width="wrap_content"
+	   		 android:layout_height="wrap_content"
+	   		 android:layout_gravity="center" 
+	         android:layout_centerHorizontal="true"
+	   	     android:text="点击图片打开闪关灯"  
+	   	     android:textColor="#ffffff" 
+		  /> 
+	
+    <LinearLayout
+          android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:orientation="vertical"
+	      android:layout_marginTop="80dip"
+	      android:layout_marginLeft="20dip"
+	      android:layout_marginRight="20dip">
+	       
+	   	   <LinearLayout
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal" >
+	
+		       <TextView
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_weight="1"
+		           android:gravity="right"
+		           android:layout_marginRight="20dip"
+		           android:text="当前的闪光灯模式: "
+		           android:textColor="#ffffff" 
+		        />
+		
+		        <TextView
+		            android:id="@id/text_flashlight_mode"  
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:gravity="left"
+		            android:layout_marginLeft="20dip"
+		            android:text="off"
+		            android:textColor="#3dbef9" 
+				/>     
+	   	 </LinearLayout>
+	   	 
+	   	  <LinearLayout
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal" >
+	
+		       <TextView
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_weight="1"
+		           android:gravity="right"
+		           android:layout_marginRight="20dip"
+		           android:text="支持的闪光灯模式: "
+		           android:textColor="#ffffff" 
+		        />
+		
+		        <TextView
+		            android:id="@id/text_support_flashlight_mode"  
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:gravity="left"
+		            android:layout_marginLeft="20dip"
+		            android:textColor="#3dbef9" 
+				/>     
+	   	 </LinearLayout>
+  	 </LinearLayout>	    	 
+</LinearLayout>

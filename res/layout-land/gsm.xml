@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/item_background_land" >
+
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:layout_weight="4"
+         android:layout_marginLeft="40dip"
+         android:background="#00000000"
+         android:orientation="vertical" >
+
+	    <ImageView
+	           android:id="@id/image_gsm"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/gsm" 
+	     /> 
+	</LinearLayout> 	
+      <ScrollView
+           android:id="@id/main_scrollview"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1"
+           android:layout_marginTop="30dip" 
+	       android:layout_marginBottom="30dip"
+	       android:layout_marginRight="30dip"
+	       android:layout_marginLeft="60dip"
+           android:orientation="vertical" >
+              
+           <LinearLayout
+	           android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center"
+		       android:orientation="vertical" >
+	       
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_mobile_type"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_mobile_type"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			            android:text="@string/gsm_telephone_number"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_telephone_number"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_imei"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_imei"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_imsi"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_imsi"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_sim_country"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_sim_country"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_sim_serial_number"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_sim_serial_number"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_sim_state"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_sim_state"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_software_version"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_software_version"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_network_operator_number"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_network_operator_number"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_network_operator_name"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_network_operator_name"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_telephone_type"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_telephone_type"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_location"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_location"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_roame_state"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_roame_state"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_email_number"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_email_number"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_email_type"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_email_type"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_active_data"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_active_data"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_data_state"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_data_state"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    		</LinearLayout>
+	    		
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:text="@string/gsm_call_state"
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/gsm_call_state"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	     	 </LinearLayout>
+	    	 <ListView 
+	    	     android:layout_height="wrap_content" 
+	    	     android:layout_width="fill_parent" 
+	    	     android:id="@id/gsm_nearby_msg_list"/>
+		 </LinearLayout>
+	</ScrollView>
+</LinearLayout> 

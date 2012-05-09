@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/item_background_land" >
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_marginLeft="40dip"
+            android:background="#00000000"
+            android:orientation="vertical" >
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@drawable/microphone" />
+             
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="30dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"      
+            android:orientation="vertical" >
+
+            <com.lenovo.check.microphone.MicrophoneView
+                android:id="@id/microphone_voice_dynamic_view"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="6.0dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/microphone_prompt"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="20dip"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@id/main_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="48.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="6.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/microphone_voice_format"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/microphone_voice_format"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/microphone_voice_source"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/microphone_voice_source"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/microphone_voice_channel_config"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/microphone_voice_channel_config"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/microphone_voice_channel_count"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/microphone_voice_channel_count"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/microphone_voice_min_buffer_size"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/microphone_voice_min_buffer_size"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/microphone_voice_state"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/microphone_voice_state"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/microphone_voice_sample_rate"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/microphone_voice_sample_rate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

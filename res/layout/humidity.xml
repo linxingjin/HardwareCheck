@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="6.0dip"
+        android:orientation="vertical" >
+
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginTop="6.0dip"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@id/humidity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:gravity="left"
+                android:text="@string/text_btn_pressure"
+                android:textSize="10.0dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/altavoz_on" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ok" />
+                </FrameLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="6.0dip"
+            android:orientation="vertical" >
+
+           <ScrollView
+                android:id="@id/main_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="48.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="6.0dip"
+                android:background="#30000000" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_value"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_value"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_accuracy"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_accuracy"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_name"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_company"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_company"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_sample_rate"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_sample_rate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_version"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_version"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_power"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_power"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_max_range"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_max_range"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/humidity_resolution"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/humidity_resolution"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView> 
+        </LinearLayout>
+    </LinearLayout>
+ </LinearLayout>
+</RelativeLayout>

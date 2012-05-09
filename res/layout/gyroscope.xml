@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginLeft="60dip"
+            android:layout_marginRight="60dip"
+            android:layout_marginTop="6.0dip"
+            android:orientation="vertical" >
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dip"
+                android:layout_marginBottom="70dip"
+                android:layout_gravity="center"
+                android:background="@drawable/gyroscope_sensor" 
+            />
+
+           <ScrollView
+                android:id="@id/main_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="48.0dip"
+                android:layout_marginLeft="60dip"
+                android:layout_marginRight="60dip"
+                android:layout_marginTop="6.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gyroscope_name"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gyroscope_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gyroscope_company"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gyroscope_company"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gyroscope_sample_rate"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gyroscope_sample_rate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gyroscope_version"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gyroscope_version"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gyroscope_power"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gyroscope_power"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gyroscope_max_range"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gyroscope_max_range"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left"
+                            android:text="@string/gyroscope_resolution"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@id/gyroscope_resolution"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="12.0dip"
+                            android:gravity="right"
+                            android:textColor="#3dbef9" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView> 
+        </LinearLayout>
+</RelativeLayout>

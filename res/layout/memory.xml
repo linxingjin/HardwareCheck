@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_background" >
+
+    <ImageView
+        android:id="@id/image_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="60dip"
+        android:layout_marginBottom="80dip"
+		android:layout_centerHorizontal="true"
+        android:background="@drawable/memory"      
+    />
+	
+     <ScrollView
+           android:id="@id/memory_scrollview"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_marginTop="50dip"
+           android:layout_below="@id/image_memory"
+           android:layout_margin="20dip" >
+              
+           <LinearLayout
+	           android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical" >
+		       
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:layout_marginRight="20dip"
+			           android:text="运行内存总大小: "
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_memory_total"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:layout_marginRight="20dip"
+			           android:text="可用内存大小: "
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_memory_available"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:layout_marginRight="20dip"
+			           android:text="内存已使用: "
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_memory_used"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:layout_marginRight="20dip"
+			           android:text="SDCard总大小: "
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_sdcard_total"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:layout_marginRight="20dip"
+			           android:text="SDCard剩余大小: "
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_sdcard_available"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+	    	   
+		   	   <LinearLayout
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal" >
+		
+			       <TextView
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:layout_weight="1"
+			           android:gravity="right"
+			           android:layout_marginRight="20dip"
+			           android:text="SDCard已使用: "
+			           android:textColor="#ffffff" 
+			        />
+			
+			        <TextView
+			            android:id="@id/text_sdcard_used"  
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:gravity="left"
+			            android:layout_marginLeft="20dip"
+			            android:textColor="#3dbef9" 
+					/>     
+	    	   </LinearLayout>
+    	   </LinearLayout>
+	 </ScrollView>
+</RelativeLayout>

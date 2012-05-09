@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="6.0dip"
+        android:orientation="vertical" >
+
+	         <LinearLayout
+	             android:layout_width="fill_parent"
+	             android:layout_height="fill_parent"
+	             android:layout_gravity="center"
+	             android:gravity="center"
+	             android:layout_weight="4"
+	             android:background="#00000000"
+	             android:orientation="vertical" >
+	
+	             <Button
+	                 android:id="@id/btn_altavoz_inner"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_gravity="center"
+	                 android:background="@drawable/altavoz" />
+	
+	             <TextView
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_gravity="center"
+	                 android:gravity="center"
+	                 android:text="@string/text_altavoz_inner"
+	                 android:textColor="#ffffffff"
+	                 android:textSize="15.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginTop="6.0dip"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@id/main_scrollview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="48.0dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="6.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+					
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView 
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_sys_volume"
+                                android:textColor="#ffffffff" />
+                            <TextView android:id="@id/altavoz_sys_volume_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="15dip"
+                                android:textColor="#ffffffff" />
+                        </RelativeLayout>
+					
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <!-- <com.lenovo.check.util.ProgressView
+                                android:id="@id/altavoz_sys_volume"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20.0dip"
+                                android:layout_marginLeft="18.0dip"
+                                android:layout_marginRight="18.0dip" /> -->
+                             <ProgressBar android:id="@id/altavoz_sys_volume"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="5.0dip"
+                                 android:layout_marginLeft="18.0dip"
+                                 android:layout_marginRight="18.0dip"
+                                 style="@style/progress_horizontal_style"/>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_conversation_volume"
+                                android:textColor="#ffffffff" />
+                            <TextView android:id="@id/altavoz_conversation_volume_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="15dip"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#ffffffff" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                           <!--  <com.lenovo.check.util.ProgressView
+                                android:id="@id/altavoz_conversation_volume"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20.0dip"
+                                android:layout_marginLeft="18.0dip"
+                                android:layout_marginRight="18.0dip" /> -->
+                            <ProgressBar android:id="@id/altavoz_conversation_volume"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="5.0dip"
+                                 android:layout_marginLeft="18.0dip"
+                                 android:layout_marginRight="18.0dip"
+                                 style="@style/progress_horizontal_style"/>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_ring_volume"
+                                android:textColor="#ffffffff" />
+                            <TextView android:id="@id/altavoz_ring_volume_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="15dip"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#ffffffff" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                           <!--  <com.lenovo.check.util.ProgressView
+                                android:id="@id/altavoz_ring_volume"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20.0dip"
+                                android:layout_marginLeft="18.0dip"
+                                android:layout_marginRight="18.0dip" /> -->
+                             <ProgressBar android:id="@id/altavoz_ring_volume"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="5.0dip"
+                                 android:layout_marginLeft="18.0dip"
+                                 android:layout_marginRight="18.0dip"
+                                 style="@style/progress_horizontal_style"/>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_notification_volume"
+                                android:textColor="#ffffffff" />
+                            <TextView android:id="@id/altavoz_notification_volume_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="15dip"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#ffffffff" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <!-- <com.lenovo.check.util.ProgressView
+                                android:id="@id/altavoz_notification_volume"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20.0dip"
+                                android:layout_marginLeft="18.0dip"
+                                android:layout_marginRight="18.0dip" /> -->
+                             <ProgressBar android:id="@id/altavoz_notification_volume"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="5.0dip"
+                                 android:layout_marginLeft="18.0dip"
+                                 android:layout_marginRight="18.0dip"
+                                 style="@style/progress_horizontal_style"/>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_music_volume"
+                                android:textColor="#ffffffff" />
+                             <TextView android:id="@id/altavoz_music_volume_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="15dip"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#ffffffff" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <!-- <com.lenovo.check.util.ProgressView
+                                android:id="@id/altavoz_music_volume"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20.0dip"
+                                android:layout_marginLeft="18.0dip"
+                                android:layout_marginRight="18.0dip" /> -->
+                             <ProgressBar android:id="@id/altavoz_music_volume"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="5.0dip"
+                                 android:layout_marginLeft="18.0dip"
+                                 android:layout_marginRight="18.0dip"
+                                 style="@style/progress_horizontal_style"/>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_alarm_volume"
+                                android:textColor="#ffffffff" />
+                            <TextView android:id="@id/altavoz_alarm_volume_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="15dip"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#ffffffff" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <!-- <com.lenovo.check.util.ProgressView
+                                android:id="@id/altavoz_alarm_volume"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20.0dip"
+                                android:layout_marginLeft="18.0dip"
+                                android:layout_marginRight="18.0dip" /> -->
+                            <ProgressBar android:id="@id/altavoz_alarm_volume"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="5.0dip"
+                                 android:layout_marginLeft="18.0dip"
+                                 android:layout_marginRight="18.0dip"
+                                 style="@style/progress_horizontal_style"/>
+                        </LinearLayout>
+                        
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_dtmf_volume"
+                                android:textColor="#ffffffff" />
+                             <TextView android:id="@id/altavoz_dtmf_volume_percent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="15dip"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#ffffffff" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <!-- <com.lenovo.check.util.ProgressView
+                                android:id="@id/altavoz_dtmf_volume"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20.0dip"
+                                android:layout_marginLeft="18.0dip"
+                                android:layout_marginRight="18.0dip" /> -->
+                             <ProgressBar android:id="@id/altavoz_dtmf_volume"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="5.0dip"
+                                 android:layout_marginLeft="18.0dip"
+                                 android:layout_marginRight="18.0dip"
+                                 style="@style/progress_horizontal_style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_multimedia_chip"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_multimedia_chip"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_alsa_version"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_alsa_version"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_mode"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_mode"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_ringing_mode"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_ringing_mode"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_bluetooth_a2dp"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_bluetooth_a2dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_bluetooth_line_control"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_bluetooth_line_control"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_bluetooth_sco"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_bluetooth_sco"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_mcriophone_quiet"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_mcriophone_quiet"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_music_active"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_music_active"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_speakphone"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_speakphone"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="left"
+                                android:text="@string/altavoz_earphone"
+                                android:textColor="#ffffffff" />
+
+                            <TextView
+                                android:id="@id/altavoz_earphone"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="12.0dip"
+                                android:gravity="right"
+                                android:textColor="#3dbef9" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background_land" >
+    
+    <RelativeLayout      
+  		android:layout_width="wrap_content"
+  		android:layout_height="fill_parent">
+    
+	    <ImageView 
+	        android:id="@id/application_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dip"
+	        android:src="@drawable/main_display"
+		/>
+	    
+	   	<LinearLayout 
+	    	android:orientation="horizontal" 
+	    	android:id="@id/linear_layout_bottom_image" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_below="@id/application_image"
+	    	android:layout_marginTop="70dip"
+	    	android:layout_centerHorizontal="true" >
+	    	
+	        <ImageView 
+	            android:clickable="true"  
+	        	android:padding="15.0dip" 
+	        	android:layout_gravity="center_vertical" 
+	        	android:layout_width="wrap_content" 
+	        	android:layout_height="wrap_content" 
+	        	android:src="@drawable/guide_round" />
+	        <ImageView 
+	            android:clickable="true"  
+	        	android:padding="15.0dip"  
+	        	android:layout_gravity="center_vertical" 
+	        	android:layout_width="wrap_content" 
+	        	android:layout_height="wrap_content" 
+	        	android:src="@drawable/guide_round" />
+	        <ImageView 
+	            android:clickable="true"  
+	        	android:padding="15.0dip"  
+	        	android:layout_gravity="center_vertical" 
+	        	android:layout_width="wrap_content" 
+	        	android:layout_height="wrap_content" 
+	        	android:src="@drawable/guide_round" />
+	    </LinearLayout>
+	</RelativeLayout>
+    
+	<com.lenovo.check.ui.MyViewGroup  
+	    android:id="@id/scroll_layout"    
+	    android:layout_width="fill_parent"    
+	    android:layout_height="fill_parent" >    
+  		
+	    <!-- 第一个View -->
+ 	    <FrameLayout      
+	  		android:layout_width="fill_parent"    
+	  		android:layout_height="fill_parent"> 
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"
+	            android:layout_marginLeft="20dip"
+	            android:orientation="vertical" >
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+	
+	                <!-- Wifi -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_wifi"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/wifi_on"
+	                    />
+	
+	                    <ImageView
+	                        android:id="@id/icon_wifi_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	
+	                <!-- 蓝牙 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_bluetooth"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/bluetooth_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_bluetooth_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" />
+	                </FrameLayout>
+	
+	                <!-- GSM -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_gsm"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/gsm_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_gsm_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" />
+	                </FrameLayout>
+	                            
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+	                
+	                <!-- 前摄像头 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	                   
+	                    <Button
+	                        android:id="@id/btn_front_camera"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/front_camera_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_front_camera_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" />
+	                </FrameLayout>
+	 
+	                <!-- 后摄像头 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	                    
+	                    <Button
+	                        android:id="@id/btn_back_camera"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/back_camear_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_back_camera_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" />
+	                </FrameLayout>	               
+	                
+	                <!-- 闪光灯 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_flash"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/flash_light_on"
+				        />
+	
+	                    <ImageView
+	                        android:id="@id/icon_flash_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" />
+	                </FrameLayout>                       
+				</LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >         
+   
+	                <!-- CPU -->
+					<FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_cpu"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/cpu_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_cpu_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	                
+					<!-- Memory -->
+					<FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_memory"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/memory_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_memory_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>    
+	                
+	                <!-- OS系统 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_android_os"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/android_os_on"
+	                    />
+	
+	                    <ImageView
+	                        android:id="@id/icon_android_os_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+				</LinearLayout>
+				
+			</LinearLayout>
+	    </FrameLayout>
+		
+ 	    <!-- 第二个View -->
+ 	    <FrameLayout    
+	  		android:layout_width="fill_parent"    
+	  		android:layout_height="fill_parent"> 
+		
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"
+	            android:orientation="vertical" >
+	            
+			    <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+	
+	                <!-- 话筒 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_microphone"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/microphone_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_microphone_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	                
+	                <!-- 臀音 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_altavoz"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/altavoz_on"
+	                    />
+	                    
+	                    <ImageView
+	                        android:id="@id/icon_altavoz_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" />
+	                </FrameLayout>
+	                
+	
+	                <!-- 振动器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_vibrator"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/vibrator_on"
+	                    />
+	                    
+	                    <ImageView
+	                        android:id="@id/icon_vibrator_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+	
+					<!-- 电池 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_battery"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/battery_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_battery_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+					
+					<!-- 屏幕 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_screen"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/display_on"
+	                    />
+	
+	                    <ImageView
+	                        android:id="@id/icon_screen_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	                
+	                <!-- 重力传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_gravity"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/gravity_sensor_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_gravity_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" />
+	                </FrameLayout>  
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+	                
+	                <!-- 温度传感器 -->
+					<FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_temperature"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/temperature_sensor_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_temperature_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>   
+	                
+	
+	                <!-- 指南针 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_compass"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/compass_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_compass_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	                
+					<!-- 光线传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_light_sensor"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/light_sensor_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_light_sensor_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	                
+	            </LinearLayout>
+
+			</LinearLayout>
+		</FrameLayout> 
+		
+ 	    <!-- 第三个View -->
+		<FrameLayout    
+	  		android:layout_width="fill_parent"    
+	  		android:layout_height="fill_parent"> 
+	  	
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"
+	            android:orientation="vertical" >
+
+			    <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+	                    
+	                <!-- 压力传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_pressure"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/pressure_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_pressure_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                    />
+	                </FrameLayout>
+	
+	                <!-- 距离传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_proximity"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/proximity_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_proximity_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	                
+					<!-- 加速度传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_speed_accelerate"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/speed_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_speed_accelerate_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+		        </LinearLayout>
+		    		        
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	
+	                <!-- 螺旋仪传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_gyroscope"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/gyroscope_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_gyroscope_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>
+	                
+	                <!-- 方向传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_orientation"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/orientation_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_orientation_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                     />
+	                </FrameLayout>
+	               
+	                <!-- 旋转矢量传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_rotation"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/rotation_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_rotation_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout>  
+	                
+	             </LinearLayout>  
+			    
+			    <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+					
+	                <!-- 线性加速度传感器 -->
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="20dip"
+	                    android:layout_marginBottom="20dip"
+	                    android:layout_marginLeft="40dip"
+	                    android:layout_marginRight="40dip" >
+	
+	                    <Button
+	                        android:id="@id/btn_linear_accelerate"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/linear_acce_on"
+						/>
+	
+	                    <ImageView
+	                        android:id="@id/icon_linear_accelerate_exist"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center" 
+	                    />
+	                </FrameLayout> 
+	                           
+	            </LinearLayout>
+
+		    </LinearLayout> 
+        </FrameLayout> 
+     </com.lenovo.check.ui.MyViewGroup> 
+
+</LinearLayout>

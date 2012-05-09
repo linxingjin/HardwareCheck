@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_background" >
+
+    <Button 
+       android:id="@id/btn_screen_color_test"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dip"
+       android:layout_marginBottom="10dip"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/display"         
+    />	
+    <TextView
+       android:id="@id/text_screeen_color_hint"
+       android:layout_width="wrap_content"
+  	   android:layout_height="wrap_content"
+  	   android:layout_gravity="center" 
+  	   android:layout_centerHorizontal="true"
+  	   android:gravity="center"
+  	   android:layout_below="@id/btn_screen_color_test"  
+  	   android:text="点击图片进行坏点测试" 
+  	   android:textColor="#ffffff" 
+    />   
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/text_screeen_color_hint"
+        android:layout_marginTop="50dip"
+        android:layout_marginLeft="30dip"
+	    android:layout_marginRight="30dip"
+        android:orientation="vertical" >   
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="right"
+	            android:layout_marginRight="20dip"
+	            android:text="屏幕分辨率:  " 
+	            android:textColor="#ffffff" 
+	        />
+	
+	        <TextView
+	            android:id="@id/text_screen_resolution"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            android:layout_marginLeft="20dip"
+	            android:textColor="#3dbef9" 
+			/>
+    	</LinearLayout>
+    	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="right"
+	            android:layout_marginRight="20dip"
+	            android:text="垂直像素:  " 
+	            android:textColor="#ffffff" 
+	        />
+	
+	        <TextView
+	            android:id="@id/text_screen_height_pixel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            android:layout_marginLeft="20dip"
+	            android:textColor="#3dbef9" 
+			/>
+    	</LinearLayout>
+    	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="right"
+	            android:layout_marginRight="20dip"
+	            android:text="水平像素:  " 
+	            android:textColor="#ffffff" 
+	        />
+	
+	        <TextView
+	            android:id="@id/text_screen_width_pixel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            android:layout_marginLeft="20dip"
+	            android:textColor="#3dbef9" 
+			/>
+    	</LinearLayout>
+    	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="right"
+	            android:layout_marginRight="20dip"
+	            android:text="屏幕密度:  " 
+	            android:textColor="#ffffff" 
+	        />
+	
+	        <TextView
+	            android:id="@id/text_screen_density"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            android:layout_marginLeft="20dip"
+	            android:textColor="#3dbef9" 
+			/>
+    	</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
